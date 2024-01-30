@@ -117,9 +117,13 @@ img {
   top: 0;
   width: 320px;
   height: 100vh;
+  padding: 72px 24px 40px 16px;
   background: #FFF;
+  opacity: 0;
+    visibility: hidden;
+    /* position: none; */
 }
-/* .menu-close-btn {
+.menu-close-btn {
   position: absolute;
   top: 24px;
   right: 24px;
@@ -134,7 +138,7 @@ img {
   justify-content: center;
   align-items: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
+}
 
 .icon-close-black-menu {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -149,8 +153,15 @@ border: none;
 }
 
 .mob-navigation {
+  /* display: flex;
+  flex-direction: column; */
+  /* margin-bottom:40px ; */
 }
 .mob-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  /* margin-bottom: 40px; */
 }
 .mob-nav-link {
   color: var(--NAVY-BLUE, #2E2F42);
@@ -160,13 +171,72 @@ font-weight: 700;
 line-height: 1.11; /* 111.111% */
 letter-spacing: 0.02em;
 text-transform: capitalize;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.mob-nav-link:hover, .mob.mob-nav-link:focus {
+  color: var(--OCEAN, #404BBF);
+}
+
 .current {
 }
 .mob-contacts {
+ display: flex;
+ flex-direction: column;
+ gap: 24px;
+ margin-top: 168px;
+ margin-bottom: 48px;
 }
+
+.mob-div {
+}
+
+.mob-section-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
 .mob-contacts-link {
+  color: var(--SLATE, #434455);
+font-family: Roboto;
+font-size: 20px;
+font-weight: 500;
+line-height: 1.2; /* 120% */
+letter-spacing: 0.02em;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.mob-contacts-link:hover, .mob-contacts-link:focus {
+  color: var(--IRIS, #4D5AE5);
+
+}
+
+.mob-emblem {
+  width: 100%;
+  height: 100%;
+  background-color:#4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-emblem:hover {
+  background-color: #404bbf;
+}
+
+.mob-emblem:focus {
+  background-color: #404bbf;
+}
+
+.mob-social-emblem {
+  width: 40px;
+  height: 40px;
+}
+
 
 @media screen and (min-width:768px) {
 
@@ -968,6 +1038,8 @@ border: none;
   letter-spacing: 0.04em;
   color: #8E8F99;
 }
+
+
 
 .span-modal {
   width: 16px;

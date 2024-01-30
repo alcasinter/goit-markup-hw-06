@@ -50,11 +50,11 @@ img {
   margin: 0 auto;
 }
 
-@media screen and (min-width:768px) {
+/* @media screen and (min-width:768px) {
   .container {
     max-width: 768px;
   }
-}
+} */
 
 @media screen and (min-width:1158px) {
   .container {
@@ -188,9 +188,6 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  margin-bottom: 48px;
 }
 
-.mob-div {
-}
-
 .mob-section-social {
   display: flex;
   justify-content: center;
@@ -221,7 +218,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   align-items: center;
   justify-content: center; 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mob-emblem:hover {
@@ -239,6 +236,11 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
 @media screen and (min-width:768px) {
+
+.container {
+    max-width: 768px;
+  }
+
 
   .open-menu-btn {
     display: none;
@@ -323,7 +325,45 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .contacts-link:focus {
   color: var(--OCEAN, #404bbf);
 }
+
+.title {
+  background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),url(../images/dark-bg-tablet.jpeg);
+  background-repeat: no-repeat;
+  padding: 112px 0 204px;
+  height: 436px;
 }
+
+.title-name {
+        color: var(--WHITE, #fff);
+        text-align: center;
+        font-family: Roboto;
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        margin: auto;
+        max-width: 496px;
+    }
+
+
+
+.team-list {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 64px;
+}
+.modal {
+  width:408px;
+  min-height: 584px ;
+}
+
+}
+
+
+
 
 @media screen and (min-width:1158px) {
 
@@ -376,6 +416,14 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   .title {
     background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),url(../images/phone-main-foto-x2.jpeg);
   }
+}
+
+@media screen and (min-width:768px) and (min-resolution:192dpi) {
+    .title{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/dark-bg-tablet-x2.jpg);
+    }
+    
+    
 }
 
 .order-button {
@@ -1053,10 +1101,16 @@ border: none;
   fill: transparent;
 }
 
+/* .modal-span {
+  per favore non piangere
+} */
+
+
+
 .modal-link {
   color: #4d5ae5;
   text-decoration: underline;
-  margin-left: 4px;
+  margin-left: 19px;
 }
 
 .button-send {

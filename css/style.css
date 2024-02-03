@@ -157,7 +157,6 @@ gap: 24px;
 
 .portfolio-list {
     align-items: center;
-    justify-content: center;
     gap: 24px;
     row-gap: 72px;
 }
@@ -357,7 +356,6 @@ letter-spacing: 0.02em;
 footer {
     background: var(--NAVY-BLUE, #2e2f42);
     padding: 100px 0 100px;
-    max-width: 1440px;
 }
 
 .name-footer-logo {

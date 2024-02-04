@@ -8,6 +8,8 @@ a {
   text-decoration: none;
 }
 
+
+
 ul,
 ol {
   list-style: none;
@@ -106,7 +108,7 @@ img {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   padding: 72px 24px 40px 16px;
   background: #FFF;
   display: flex;
@@ -261,19 +263,13 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
 
-@media screen and (min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
+@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .title {
     background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),url(../images/phone-main-foto-x2.jpeg);
   }
 }
 
-@media screen and (min-width:1158px) and (min-resolution:192dpi) {
-    .title {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/main-foto-x2.jpeg);
-    }
-    
-    
-}
+
 
 .order-button {
   color: var(--WHITE, #fff);
@@ -565,7 +561,6 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  margin-bottom: 72px;
 }
 
 .name_footer {

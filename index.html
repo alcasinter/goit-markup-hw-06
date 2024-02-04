@@ -69,38 +69,37 @@
             <a href="mailto:info@devstudio.com" class="mob-contacts-link">info@devstudio.com</a>
           </li>
         </ul>
+        <ul class="mob-section-social">
+          <li class="mob-social-emblem">
+            <a class="mob-emblem" href="https://www.instagram.com/"><svg class="mob-icon-emblem-styles" width="24"
+                height="24">
+                <use href="./images/icons.svg#icon-instagram-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-social-emblem">
+            <a class="mob-emblem" href="https://www.twitter.com/"><svg class="mob-icon-emblem-styles" width="24"
+                height="24">
+                <use href="./images/icons.svg#icon-twitter-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-social-emblem">
+            <a class="mob-emblem" href="https://www.facebook.com/"><svg class="mob-icon-emblem-styles" width="24"
+                height="24">
+                <use href="./images/icons.svg#icon-facebook-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-social-emblem">
+            <a class="mob-emblem" href="https://www.linkedin.com/"><svg class="mob-icon-emblem-styles" width="24"
+                height="24">
+                <use href="./images/icons.svg#icon-linkedin-1"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </address>
-
-      <ul class="mob-section-social">
-        <li class="mob-social-emblem">
-          <a class="mob-emblem" href="https://www.instagram.com/"><svg class="mob-icon-emblem-styles" width="24"
-              height="24">
-              <use href="./images/icons.svg#icon-instagram-2"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="mob-social-emblem">
-          <a class="mob-emblem" href="https://www.twitter.com/"><svg class="mob-icon-emblem-styles" width="24"
-              height="24">
-              <use href="./images/icons.svg#icon-twitter-1"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="mob-social-emblem">
-          <a class="mob-emblem" href="https://www.facebook.com/"><svg class="mob-icon-emblem-styles" width="24"
-              height="24">
-              <use href="./images/icons.svg#icon-facebook-1"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="mob-social-emblem">
-          <a class="mob-emblem" href="https://www.linkedin.com/"><svg class="mob-icon-emblem-styles" width="24"
-              height="24">
-              <use href="./images/icons.svg#icon-linkedin-1"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
     </div>
   </header>
   <main>
@@ -330,8 +329,12 @@
         <ul class="portfolio-list">
           <li class="hoover-portfolio">
             <div class="alternative-text">
-              <img srcset="./images/mobile-1-x1.jpg 1x, ./images/mobile-1-x2.jpg 2x" src="./images/mobile-1-x1.jpg"
-                class="portfolio-img" alt="Banking App" width="288" />
+              <picture>
+                <source media="(min-width: 768px)" srcset="./images/tablet-1-x1.jpeg 1x, ./images/tablet-1-x2.jpeg 2x">
+                <source media="(min-width: 1158px)" srcset="./images/tablet-1-x1.jpeg 1x, ./images/tablet-1-x2.jpeg 2x">
+                <img srcset="./images/mobile-1-x1.jpg 1x, ./images/mobile-1-x2.jpg 2x" src="./images/mobile-1-x1.jpg"
+                  class="portfolio-img" alt="Banking App" width="288" />
+              </picture>
               <p class="hoover-text">
                 14 Stylish and User-Friendly App Design Concepts · Task Manager
                 App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud
@@ -345,8 +348,12 @@
           </li>
           <li class="hoover-portfolio">
             <div class="alternative-text">
-              <img srcset="./images/mobile-2-x1.jpg 1x, ./images/mobile-2-x2.jpg 2x" src="./images/mobile-2-x1.jpg"
-                class="portfolio-img" alt="Cashless Payment" width="288" />
+              <picture>
+                <source media="(min-width: 768px)" srcset="./images/tablet-2-x1.jpeg 1x, ./images/tablet-2-x2.jpeg 2x">
+                <source media="(min-width: 1158px)" srcset="./images/tablet-2-x1.jpeg 1x, ./images/tablet-2-x2.jpeg 2x">
+                <img srcset="./images/mobile-2-x1.jpg 1x, ./images/mobile-2-x2.jpg 2x" src="./images/mobile-2-x1.jpg"
+                  class="portfolio-img" alt="Cashless Payment" width="288" />
+              </picture>
               <p class="hoover-text">
                 14 Stylish and User-Friendly App Design Concepts · Task Manager
                 App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud
@@ -360,8 +367,12 @@
           </li>
           <li class="hoover-portfolio">
             <div class="alternative-text">
-              <img srcset="./images/mobile-3-x1.jpg 1x, ./images/mobile-3-x2.jpg 2x" src="./images/mobile-3-x1.jpg"
-                class="portfolio-img" alt="Meditation App" width="288" />
+              <picture>
+                <source media="(min-width: 768px)" srcset="./images/tablet-3-x1.jpeg 1x, ./images/tablet-3-x2.jpeg 2x">
+                <source media="(min-width: 1158px)" srcset="./images/tablet-3-x1.jpeg 1x, ./images/tablet-3-x2.jpeg 2x">
+                <img srcset="./images/mobile-3-x1.jpg 1x, ./images/mobile-3-x2.jpg 2x" src="./images/mobile-3-x1.jpg"
+                  class="portfolio-img" alt="Meditation App" width="288" />
+              </picture>
               <p class="hoover-text">
                 14 Stylish and User-Friendly App Design Concepts · Task Manager
                 App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud
@@ -375,8 +386,12 @@
           </li>
           <li class="hoover-portfolio">
             <div class="alternative-text">
-              <img srcset="./images/mobile-4-x1.jpg 1x, ./images/mobile-4-x2.jpg 2x" src="./images/mobile-4-x1.jpg"
-                class="portfolio-img" alt="Taxi Service" width="288" />
+              <picture>
+                <source media="(min-width: 768px)" srcset="./images/tablet-4-x1.jpeg 1x, ./images/tablet-4-x2.jpeg 2x">
+                <source media="(min-width: 1158px)" srcset="./images/tablet-4-x1.jpeg 1x, ./images/tablet-4-x2.jpeg 2x">
+                <img srcset="./images/mobile-4-x1.jpg 1x, ./images/mobile-4-x2.jpg 2x" src="./images/mobile-4-x1.jpg"
+                  class="portfolio-img" alt="Taxi Service" width="288" />
+              </picture>
               <p class="hoover-text">
                 14 Stylish and User-Friendly App Design Concepts · Task Manager
                 App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud
@@ -390,8 +405,12 @@
           </li>
           <li class="hoover-portfolio">
             <div class="alternative-text">
-              <img srcset="./images/mobile-5-x1.jpg 1x, ./images/mobile-5-x2.jpg 2x" src="./images/mobile-5-x1.jpg"
-                class="portfolio-img" alt="Screen Illustrations" width="288" />
+              <picture>
+                <source media="(min-width: 768px)" srcset="./images/tablet-2-x5.jpeg 1x, ./images/tablet-5-x2.jpeg 2x">
+                <source media="(min-width: 1158px)" srcset="./images/tablet-2-x5.jpeg 1x, ./images/tablet-5-x2.jpeg 2x">
+                <img srcset="./images/mobile-5-x1.jpg 1x, ./images/mobile-5-x2.jpg 2x" src="./images/mobile-5-x1.jpg"
+                  class="portfolio-img" alt="Screen Illustrations" width="288" />
+              </picture>
               <p class="hoover-text">
                 14 Stylish and User-Friendly App Design Concepts · Task Manager
                 App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud
@@ -405,8 +424,12 @@
           </li>
           <li class="hoover-portfolio">
             <div class="alternative-text">
-              <img srcset="./images/mobile-6-x1.jpg 1x, ./images/mobile-6-x2.jpg 2x" src="./images/mobile-6-x1.jpg"
-                class="portfolio-img" alt="Online Courses" width="288" />
+              <picture>
+                <source media="(min-width: 768px)" srcset="./images/tablet-6-x1.jpeg 1x, ./images/tablet-6-x2.jpeg 2x">
+                <source media="(min-width: 1158px)" srcset="./images/tablet-6-x1.jpeg 1x, ./images/tablet-6-x2.jpeg 2x">
+                <img srcset="./images/mobile-6-x1.jpg 1x, ./images/mobile-6-x2.jpg 2x" src="./images/mobile-6-x1.jpg"
+                  class="portfolio-img" alt="Online Courses" width="288" />
+              </picture>
               <p class="hoover-text">
                 14 Stylish and User-Friendly App Design Concepts · Task Manager
                 App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud

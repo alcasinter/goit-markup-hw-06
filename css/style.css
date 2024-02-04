@@ -1,8 +1,18 @@
 
 
+@media screen and (min-width:768px) and (min-resolution:192dpi) {
+    .title {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/dark-bg-tablet-x2.jpg);
+    }
+    
+    
+}
+
 
 /* стилі для планшета */
 @media screen and (min-width:768px) {
+
+
 
 .container {
     max-width: 768px;
@@ -175,14 +185,17 @@ gap: 24px;
     margin-left: 2px;
 }
 
+footer {
+  padding: 96px 0  96px 92px;
+}
+
 .footer-container-logo {
     display: flex;
-    margin-bottom: 72px;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-bottom: 72px;
     margin-right: 24px;
+    margin-bottom: 0;
 }
 
 .name-footer-logo {
@@ -214,12 +227,13 @@ gap: 24px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: baseline;
 }
 
 .footer-subscribe {
   align-items: flex-start;
+  margin-top: 72px;
 }
 
 .footer-subscribe-text {
@@ -244,15 +258,15 @@ opacity: 0.3;
 
 
 
-
 /* Стилі для десктопу */
 @media screen and (min-width:1158px) and (min-resolution:192dpi) {
     .title {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/main-foto-x2.jpeg);
     }
-
+  }
 
 @media screen and (min-width:1158px) {
+
 
  .container {
     max-width: 1158px;
@@ -365,10 +379,21 @@ letter-spacing: 0.02em;
     margin-bottom: 8px;
 }
 
+.portfolio-list {
+  row-gap: 48px;
+}
+
+.portfolio-img {
+    width: 360px;
+    height: 300px;
+}
+
 footer {
     background: var(--NAVY-BLUE, #2e2f42);
     padding: 100px 0 100px;
 }
+
+
 
 .name-footer-logo {
 }
@@ -378,11 +403,9 @@ footer {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
-    align-items: center;
 }
-/* .footer-container-logo {
+.footer-container-logo {
     margin-right: 100px;
-    margin-top: 30px; */
 }
 
 
@@ -417,6 +440,7 @@ letter-spacing: 0.02em;
 .footer-subscribe {
     margin-left: 80px;
     margin-right: 0;
+    margin-top: 0;
 }
 
 .footer-subscribe-text {
